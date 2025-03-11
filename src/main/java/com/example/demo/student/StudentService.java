@@ -24,6 +24,7 @@ public class StudentService {
     public List<Student> getStudents(){
        return studentRepository.findAll();
 
+
     }
 
     public void addnewstudent(Student student) {
@@ -33,6 +34,7 @@ public class StudentService {
             throw new IllegalStateException("email taken");
         }
         studentRepository.save(student);
+
 
     }
 
